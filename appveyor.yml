@@ -1,7 +1,6 @@
 version: 1.0.{build}.0
 clone_folder: c:\projects\$(APPVEYOR_PROJECT_NAME)
 environment:
-  TestResultsUploadURI: https://ci.appveyor.com/api/testresults/nunit/$(APPVEYOR_JOB_ID)
   ApplicationID:
     secure: JUXvizs3GNjEqx/1s4opI+oKOWdo2fnpUx1kR4jGbFdocNOQbe0HLhEmbrcWFG8C
   SubscriptionID:
@@ -10,6 +9,7 @@ environment:
     secure: /2mRWM5X8tHQcgLKzGK1McKzjx+XiztzIm3T+3c3e9akymBuUYcvjSEBo97BMuRN
   ApplicationPassword:
     secure: TPxqcuBpM6hmFXQj1fLU509rfmXa+lofY2nzgtRhBLpMZJS6LCiDLawpl7MT5M9s
+  Location: WestUS
   BuildFolder: $(APPVEYOR_BUILD_FOLDER)
   ProjectName: $(APPVEYOR_PROJECT_NAME)
   ProjectID: $(APPVEYOR_POJECT_ID)
@@ -17,7 +17,7 @@ environment:
 matrix:
   fast_finish: true
 install:
-  - git clone https://github.com/powershell/dscconfiguration.tests
+  - git clone https://github.com/PlagueHO/dscconfiguration.tests
   - ps: |
         Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.205 -Force | Out-Null
         Install-Module -Name InvokeBuild -force
