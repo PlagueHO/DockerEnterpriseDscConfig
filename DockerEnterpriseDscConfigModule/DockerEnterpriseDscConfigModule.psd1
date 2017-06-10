@@ -93,7 +93,7 @@ AliasesToExport = @()
 PrivateData = @{
 
     #WindowsOSVersion of this module
-    WindowsOSVersion = '2016-Datacenter','2016-Nano-Server'
+    WindowsOSVersion = '2016-Datacenter'
 
     PSData = @{
 
