@@ -27,21 +27,15 @@
 
 .RELEASENOTES
 
-
-#>
-
-#Requires -Module DockerEnterpriseDscConfig
+#Requires -Module DockerEnterpriseDscConfigModule
 #Requires -Module PackageManagementProviderResource
+<#
+    .DESCRIPTION 
+    Example configuration script to demonstrate pairing a PowerShell Desired State Configuration script with a module that contains supporting assets. 
 
-<# 
-
-.DESCRIPTION 
- Example configuration script to demonstrate pairing a PowerShell Desired State Configuration script with a module that contains supporting assets. 
-
-.EXAMPLE
-DockerEnterpriseDscConfig -configdata c:\dsc\DockerEnterpriseDscConfig\ConfigurationData\DockerEnterpriseDscConfig.ConfigData.psd1 -outpath c:\dsc\DockerEnterpriseDscConfig\MOF
+    .EXAMPLE
+    DockerEnterpriseDscConfig -configdata c:\dsc\DockerEnterpriseDscConfig\ConfigurationData\DockerEnterpriseDscConfig.ConfigData.psd1 -outpath c:\dsc\DockerEnterpriseDscConfig\MOF
 #> 
-
 configuration DockerEnterpriseDscConfig
 {
     Import-DscResource -ModuleName 'PackageManagementProviderResource'

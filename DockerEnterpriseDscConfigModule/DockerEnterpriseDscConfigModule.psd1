@@ -18,13 +18,13 @@ ModuleVersion = '1.0.0.0'
 # CompatiblePSEditions = @()
 
 # ID used to uniquely identify this module
-GUID = 'c6a0e106-3d14-4d8e-bec5-e90050545a5b'
+GUID = '030f5954-cd3a-4019-b668-26b7cc52a399'
 
 # Author of this module
 Author = 'Daniel Scott-Raynsford'
 
 # Company or vendor of this module
-CompanyName = 'Microsoft Corporation'
+CompanyName = ''
 
 # Copyright statement for this module
 Copyright = '(c) 2017 Daniel Scott-Raynsford. All rights reserved.'
