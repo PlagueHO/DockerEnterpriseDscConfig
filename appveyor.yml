@@ -9,7 +9,7 @@ environment:
     secure: /2mRWM5X8tHQcgLKzGK1McKzjx+XiztzIm3T+3c3e9akymBuUYcvjSEBo97BMuRN
   ApplicationPassword:
     secure: TPxqcuBpM6hmFXQj1fLU509rfmXa+lofY2nzgtRhBLpMZJS6LCiDLawpl7MT5M9s
-  Location: australiasoutheast
+  Location: westeurope
   BuildFolder: $(APPVEYOR_BUILD_FOLDER)
   ProjectName: $(APPVEYOR_PROJECT_NAME)
   ProjectID: $(APPVEYOR_POJECT_ID)
