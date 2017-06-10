@@ -3,13 +3,13 @@ clone_folder: c:\projects\$(APPVEYOR_PROJECT_NAME)
 environment:
   TestResultsUploadURI: https://ci.appveyor.com/api/testresults/nunit/$(APPVEYOR_JOB_ID)
   ApplicationID:
-    secure: mHB9K9ItLkpdxUR7WgBnuBiBOl3qgJT1yizvFZDOgkRxvTV5KoZJ8QuAp+F+EbV0
+    secure: JUXvizs3GNjEqx/1s4opI+oKOWdo2fnpUx1kR4jGbFdocNOQbe0HLhEmbrcWFG8C
   SubscriptionID:
-    secure: fhB5mHXLFRRc1/iwqCA9ibCqwg7qKqkayknhebLsM+FdlrmL80HCRm1vJYafomei
+    secure: KMa3f9epx9cCF+wfJFutXZmFONGkPV7AV70s6oCAR+K/cdty12olrA1S7TgpG7Dd
   TenantID:
-    secure: J/my7xsOE9jewR0DDhD+EU5jeo5Bp83/nmIK8a8QI0QLoZXStCOtk1vUjVsKylW2
+    secure: /2mRWM5X8tHQcgLKzGK1McKzjx+XiztzIm3T+3c3e9akymBuUYcvjSEBo97BMuRN
   ApplicationPassword:
-    secure: zV3r4bwG65rWRfF1L23RYLj7GXVxsMdZtasCsX0+pYA=
+    secure: C2JV+n/y6QHIEEqvsW1+yQ==
   BuildFolder: $(APPVEYOR_BUILD_FOLDER)
   ProjectName: $(APPVEYOR_PROJECT_NAME)
   ProjectID: $(APPVEYOR_POJECT_ID)
