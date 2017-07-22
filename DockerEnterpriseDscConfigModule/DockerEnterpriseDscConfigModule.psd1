@@ -92,11 +92,7 @@ AliasesToExport = @()
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{
 
-    #WindowsOSVersion of this module
-    WindowsOSVersion = '2016-Datacenter'
-
     PSData = @{
-
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = 'DSC','Config'
 
@@ -115,6 +111,8 @@ PrivateData = @{
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
 
+        # WindowsOSVersion of this module
+        WindowsOSVersion = '2016-Datacenter'
     } # End of PSData hashtable
     
 } # End of PrivateData hashtable
